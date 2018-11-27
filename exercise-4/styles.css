@@ -1,0 +1,34 @@
+#effect {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.highlight {
+  background-color: red;
+  width: 200px !important;
+}
+
+.shrink {
+  background-color: gray;
+  width: 50px !important;
+}
+.purple{
+  background-color: purple;
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  background-color: yellow;
+}
+.divInsert{
+  width: 50px;
+  height: 50px;
+}
+.progressBar{
+  width: 150px; 
+  height: 30px;
+  border: 1.5px solid black;
+  text-align: center;
+}
