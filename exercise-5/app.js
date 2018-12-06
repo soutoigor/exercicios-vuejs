@@ -11,6 +11,11 @@ new Vue({
       name: 'TESTOBJECT', 
       id: 10,
       data: [1.67, 1.33, 0.98, 2.21]
-    }
+    },
+    toggle: true,
+    myArray: [1,2,3,4,5]
+  },
+  methods: {
+  	
   }
 });
