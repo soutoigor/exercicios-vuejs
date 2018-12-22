@@ -1,11 +1,16 @@
 <template>
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+
+        <div style="margin-top: 25px" class="row">
+            <button @click="selectedComponent = 'appQuote'" class="btn btn-primary">Quote</button>
+            <button @click="selectedComponent = 'appAuthor'" class="btn btn-warning">Author</button>
+            <button @click="selectedComponent = 'appNew'" class="btn btn-danger">New</button>
+        </div>
+        <div  class="row">
             <div class="col-xs-12">
-               <app-quote>
-                   <h1 slot="title">Title</h1>
-                   <p slot="name">Vai carai</p>
-               </app-quote>
+                <keep-alive>
+                <component :is="selectedComponent"></component>
+                </keep-alive>
             </div>
         </div>
     </div>
@@ -13,9 +18,19 @@
 
 <script>
     import Quote from './components/Quote.vue';
+    import Author from './components/Author.vue';
+    import New from './components/New.vue';
+
     export default {
+        data(){
+            return {
+                selectedComponent: 'app-quote'
+            }
+        },
         components: {
-            appQuote: Quote
+            appQuote: Quote,
+            appAuthor: Author,
+            appNew: New
         } 
     }
 </script>

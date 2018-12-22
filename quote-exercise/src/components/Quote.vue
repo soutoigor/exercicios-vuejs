@@ -1,9 +1,7 @@
 <template>
     <div>
-        <slot name="title"></slot>
-        <slot name="name"></slot>
-        <input  type="text">
-        <p>{{ texto }}</p>
+       <h1>Quote's Page</h1>
+       <p>This is my quotespage</p>
     </div>
 </template>
 
