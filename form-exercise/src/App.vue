@@ -10,6 +10,31 @@
                     <!-- Password -->
                     <!-- Store Data? Yes/No -->
 
+                    <h1>The Form
+                    <small>Please fill the fields</small>
+                    </h1>
+                    <hr>
+                    <div class="form-group">
+                        <label for="email">Email
+                            <input type="email" name="email" id="email" class="form-control">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password
+                            <input type="password" name="password" id="password" class="form-control">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="yes">Yes
+                            <input type="radio" name="yes" id="yes" class="form-control">
+                        </label>
+                        <label for="no">No
+                            <input type="radio" name="no" id="no" class="form-control">
+                        </label>
+                    </div>
+
+
+
                     <!-- Exercise 2 -->
                     <!-- Only display the Form if it has NOT been submitted -->
                     <!-- Display the Data Summary ONCE the Form HAS been submitted -->
