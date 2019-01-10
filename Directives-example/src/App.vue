@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <h1>Directives <small>Exercise</small></h1>
                 <div v-listenTo:click="clickFunc"  class="square" id="first" >
-                    click
+                    click me
                 </div>
                 <input type="text" v-listenTo:input="inputFunc" name="" id="">
 
@@ -25,7 +25,7 @@
            clickFunc(){
                console.log('Clicked');
            },
-           hoverFunc(){
+           hoverFunc(){ 
                console.log('Hovered');
            },
            inputFunc(){
