@@ -17,37 +17,37 @@
                     <div class="form-group">
                         <label for="firstName">First Name
                             <input type="text" name="firstName" id="firstName" class="form-control"
-                            v-model="userData.firstName">
+                            v-model="firstName">
                         </label>
                     </div>
                     <div class="form-group">
                         <label for="lastName">Last Name
                             <input type="text" name="lastName" id="lastName" class="form-control"
-                            v-model="userData.lastName">
+                            v-model="lastName">
                         </label>
                     </div>
                     <div class="form-group">
                         <label for="email">Email
                             <input type="email" name="email" id="email" class="form-control"
-                            v-model="userData.email">
+                            v-model="email">
                         </label>
                     </div>
                     <div class="form-group">
                         <label for="password">Password
                             <input type="password" name="password" id="password" class="form-control"
-                            v-model="userData.password">
+                            v-model="password">
                         </label>
                     </div>
                     <div class="form-group">
                         <p><strong>Store in Database?</strong></p>
                         <label for="yes">
-                            <input type="radio" value="Yes" name="yes" id="yes" class="form-control"
-                            v-model="userData.isStoredInDB">Yes
+                            <input type="radio" value="Yes" name="yes" id="yes" class=""
+                            v-model="isStoredInDB">Yes
                         </label>
                     
                         <label for="no">
-                            <input type="radio" value="No" name="no" id="no" class="form-control"
-                            v-model="userData.isStoredInDB">No
+                            <input type="radio" value="No" name="no" id="no" class=""
+                            v-model="isStoredInDB">No
                         </label>
                     </div>
 
@@ -71,13 +71,13 @@
                         <h4>Your Data</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Full Name: <span><app-full-name></app-full-name></span></p>
-                        <p>Mail: {{ userData.email }}</p>
-                        <p>Password: {{ userData.password }}</p>
-                        <p>Store in Database?: {{ userData.isStoredInDB }}</p>
+                        <p>Full Name: <app-full-name></app-full-name></p>
+                        <p>Mail: {{ email }}</p>
+                        <p>Password: {{ password }}</p>
+                        <p>Store in Database?: {{ isStoredInDB }}</p>
                     </div>
                     <div class="panel-footer">
-                        <button @click="isSubmitted = false" class="btn btn-danger">< Back</button>
+                        <button @click="isSubmitted = false" class="btn btn-danger">Back</button>
                     </div>
                 </div>
             </div>
@@ -90,13 +90,12 @@
     export default {
         data(){
             return{
-                userData: {
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    password: '',
-                    isStoredInDB: false
-                },
+            
+                firstName: '',
+                lastName: '',
+                email: '',
+                password: '',
+                isStoredInDB: false,
                 isSubmitted: false
             }
         },

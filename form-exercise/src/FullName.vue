@@ -1,11 +1,16 @@
 <template>
     <div>
-        {{userData.firstName}} {{userData.lastName}}
+        {{fullName()}}
     </div>
 </template>
 
 <script>
 export default {
-    props: ['userData.firstName', 'userData.lastName']
+    props: ['firstName', 'lastName'],
+    methods: {
+        fullName(){
+            return firstName.value + ' ' + lastName.value;
+        }
+    }
 }
 </script>
