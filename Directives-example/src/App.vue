@@ -12,8 +12,6 @@
                     hover
                 </div>
                 <input type="text" v-listenTo:input name="" id="">
-
-
             </div>
         </div>
     </div>
