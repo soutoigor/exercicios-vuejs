@@ -5,7 +5,9 @@
                 <h1>Routing</h1>
                 <hr>
                 <router-view name="header-top" ></router-view>
-                <router-view name="header-" ></router-view>
+                <transition name="slide" mode="out-in">
+                    <router-view  ></router-view>
+                </transition>
                 <router-view name="header-bottom" ></router-view>
             </div>
         </div>
@@ -22,4 +24,5 @@ import Header from './components/Header.vue';
 </script>
 
 <style>
+
 </style>
